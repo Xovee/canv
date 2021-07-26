@@ -14,12 +14,11 @@ pip install -r requirements.txt
 
 You can create your co-authorship network with a few easy steps in no time.
 
-1. Open your [dblp](https://dblp.org) author page, download your bibliographic data, e.g.,  
+1. Open your [dblp](https://dblp.org) author page, download your bibliographic data, e.g.,
 `xovee-xu.xml`  
 <img src="asset/download_data.png" alt="download data" width="250"/>
 
-2. Change variable `name` in `args` in `canv.py` to match the name of your data file, e.g.,  
-`'name': 'xovee-xu'`
+2. Change variable `name` in `args` in `canv.py` to match the name of your data file, e.g., `'name': 'xovee-xu'` 
 
 3. Run [canv.py](./canv.py), then you have `xovee-xu.html`, that's all! 
 
@@ -39,9 +38,13 @@ There are several options you can customize your CANV page.
 - `canvas_height`
 - `canvas_width`
 
-Check [canv.py](./canv.py) for more. Of course, you can directly edit [template.html](./template.html) to deeply customize your page. 
+Check [canv.py](./canv.py) for more. 
 
-PS: if you want to change the node color, search `d3.interpolateReds(webweb.scales.colors.scalar(x))` in [template.html](./template.html) and replace it within the color you like.
+## Deep Customization
+
+You can directly edit [template.html](./template.html) to deeply customize your page. Some examples:
+- If you want to change node colormap, search `d3.interpolateReds(webweb.scales.colors.scalar(x))` in [template.html](./template.html) and replace it within the color you like.
+- If you want to regularize node color/size values, modify the `getRawNodeValues()` function, e.g., `rawValues[i] = val;` to `rawValues[i] = Math.log(val)`
 
 ## Acknowledgment
 
