@@ -46,6 +46,10 @@ You can directly edit [template.html](./template.html) to deeply customize your 
 - If you want to change node colormap, search `d3.interpolateReds(webweb.scales.colors.scalar(x))` in [template.html](./template.html) and replace it within the color you like.
 - If you want to regularize node color/size values, modify the `getRawNodeValues()` function, e.g., `rawValues[i] = val;` to `rawValues[i] = Math.log(val)`
 
+## Todos
+
+- Support Google Scholar Data
+
 ## Acknowledgment
 
 Thanks to [webweb](https://github.com/dblarremore/webweb) and [dblp](https://dblp.org) team.
