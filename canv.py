@@ -31,7 +31,10 @@ def load_dblp_xml(path):
 
         if len(authors) > 2:
             for author in authors:
-                name = author['#text']
+                try:
+                    name = author['#text']
+                except TypeError:
+                    continue
                 if name[-4:].isnumeric():
                     name = name[:-5]
                 if '(-)' in name:
