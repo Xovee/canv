@@ -48,7 +48,8 @@ You can directly edit [template.html](./template.html) to deeply customize your 
 
 ## Todos
 
-- Support Google Scholar Data
+- Support Google Scholar data
+- Colormap selection
 
 ## Acknowledgment
 
