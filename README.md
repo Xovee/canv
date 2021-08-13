@@ -48,8 +48,14 @@ You can directly edit [template.html](./template.html) to deeply customize your 
 
 ## Todos
 
-- Support Google Scholar data
-- Colormap selection
+- [ ] Support Google Scholar data
+- [ ] Colormap selection
+- [ ] Optimize mobile experience
+
+## More Examples
+
+- Prof. [Andrew Y. Ng](https://xovee.cn/html/canv/andrew-y-ng.html)
+![](./asset/andrew-ng.png)
 
 ## Acknowledgment
 
