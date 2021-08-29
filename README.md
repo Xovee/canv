@@ -14,8 +14,8 @@ pip install -r requirements.txt
 
 You can create your co-authorship network with a few easy steps in no time.
 
-1. Open your [dblp](https://dblp.org) author page, download your bibliographic data, e.g.,
-`xovee-xu.xml`  
+1. Open your [Google Scholar](https://scholar.google.com/) or [dblp](https://dblp.org) author page, download 
+your bibliographic data, e.g., `xovee-xu.bib` or `xovee-xu.xml`  
 <img src="asset/download_data.png" alt="download data" width="250"/>
 
 2. Change variable `name` in `args` in `canv.py` to match the name of your data file, e.g., `'name': 'xovee-xu'` 
@@ -48,7 +48,7 @@ You can directly edit [template.html](./template.html) to deeply customize your 
 
 ## Todos
 
-- [ ] Support Google Scholar data
+- [x] Support Google Scholar data
 - [ ] Colormap selection
 - [ ] Optimize mobile experience
 

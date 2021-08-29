@@ -5,6 +5,40 @@ from webweb import Web
 import webweb
 
 
+def load_bib(path):
+    """
+    Load bibliography from .bib file.
+    You can create the .bib file yourself or download it from Google Scholar.
+    Download from Google Scholar:
+        1. open your google scholar profile
+        2. click the box in the left of `TITLE` (below your avatar)
+        3. click 'EXPORT' -> 'BibTeX'
+    """
+    with open(path) as f:
+        data = f.read()
+
+        co_author_lst = list()
+
+        def traverse(ipt):
+            author_lst = list()
+            try:
+                s_idx = ipt.index('author={')
+            except ValueError:
+                return
+            e_idx = ipt.index('},', s_idx)
+            authors = ipt[s_idx+8:e_idx].split(' and ')
+            for author in authors:
+                last_name, first_name = author.split(', ')
+                author_lst.append(first_name + ' ' + last_name)
+            co_author_lst.append(author_lst)
+            print(co_author_lst)
+            traverse(ipt[e_idx:])
+
+        traverse(data)
+
+        return co_author_lst
+
+
 def load_dblp_xml(path):
     """
     Load DBLP author metadata.
@@ -89,6 +123,7 @@ def build_graph(co_author_lst, min_weight, frequent_co_authors=None, show_percen
         
     return edge_list, percentage_names
 
+
 def read_and_write_html(path):
     with open(path, 'r') as f:
         html_file = f.read()
@@ -108,13 +143,14 @@ def read_and_write_html(path):
 
 
 def main(name,
+         data='bib',
          display_name='Xovee Xu',
          min_edge_weight=1,
          color_by='strength',
          size_by='strength',
          charge=150,
          link_length=150,
-        #  color_map='Reds',
+         #  color_map='Reds',
          scale_link_opacity=1,
          scale_link_width=1,
          name_to_match='Xovee Xu',
@@ -124,12 +160,18 @@ def main(name,
          show_legend=1,
          frequent_co_authors=None,
          show_percentage_names=0,
-         canvas_height = 700,
-         canvas_width = 1000,
+         canvas_height=700,
+         canvas_width=1000,
          ):
 
-    # load dblp data
-    co_author_lst = load_dblp_xml(path=name + '.xml')
+    # load data
+    if data == 'xml':
+        co_author_lst = load_dblp_xml(path=name + '.xml')
+    elif data == 'bib':
+        co_author_lst = load_bib(path=name + '.bib')
+    else:
+        print("Wrong 'data' keyword, should be 'bib' or 'xml'.")
+        exit()
 
     # build graph
     edge_list, percentage_names = build_graph(co_author_lst, 
@@ -176,6 +218,7 @@ def main(name,
 if __name__ == '__main__':
     args = {
         'name': 'xovee-xu',
+        'data': 'bib',  # 'bib' or 'xml'
         'display_name': 'Xovee Xu',
         'min_edge_weight': 1,
         'color_by': 'strength',  # 'degree' or 'strength'
@@ -189,8 +232,8 @@ if __name__ == '__main__':
         'show_node_names': 0,
         'hide_menu': 0,
         'show_legend': 0,
-        'show_percentage_names': 0,  # percentage; 0: don't show; perferably 5-15%;
-        'frequent_co_authors': None,
+        'show_percentage_names': 10,  # percentage; 0: don't show; perferably 5-15%;
+        'frequent_co_authors': None,  # a list of co-author names
         'canvas_height': 700,
         'canvas_width': 1000,
     }
