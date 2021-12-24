@@ -18,27 +18,17 @@ You can create your co-authorship network with a few easy steps in no time.
 your bibliographic data, e.g., `xovee-xu.bib` or `xovee-xu.xml`  
 <img src="asset/download_data.png" alt="download data" width="250"/>
 
-2. Change variable `name` in `args` in `canv.py` to match the name of your data file, e.g., `'name': 'xovee-xu'` 
-
-3. Run [canv.py](./canv.py), then you have `xovee-xu.html`, that's all! 
+2. Run [canv.py](./canv.py), then you have `xovee-xu.html`, that's all! 
+```shell
+> python canv.py xovee-xu
+```
 
 ## Option
 
 There are several options you can customize your CANV page.
-
-- `name`: your data file name
-- `display_name`: name displayed in webpage
-- `min_edge_weight`: filter out infrequent co-authors
-- `link_length`: you know what
-- `name_to_match`: show someone's name in default
-- `radius`: node size
-- `show_node_names`: show all co-author names in default or not
-- `show_percentage_names`: show top frequented co-author names (%), preferably 5-15% if you have a large number of co-authors; if this variable is not `0`, `frequent_co_authors` must be `None`
-- `frequent_co_authors`: a list contains co-author names, the webpage will display their names in default; if `frequent_co_authors` is not `None`, `show_percentage_names` must be `0`
-- `canvas_height`
-- `canvas_width`
-
-Check [canv.py](./canv.py) for more. 
+```shell
+> python canv.py --help
+```
 
 ## Deep Customization
 
