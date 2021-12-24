@@ -31,7 +31,6 @@ def load_bib(path):
                 last_name, first_name = author.split(', ')
                 author_lst.append(first_name + ' ' + last_name)
             co_author_lst.append(author_lst)
-            print(co_author_lst)
             traverse(ipt[e_idx:])
 
         traverse(data)
@@ -93,9 +92,9 @@ def build_graph(co_author_lst, min_weight, frequent_co_authors=None, show_percen
             for another_author in paper_author:
                 if author != another_author:
                     try:
-                        g[author][another_author]['weight'] += .5
+                        g[author][another_author]['weight'] += (.5 / (len(paper_author)-1))
                     except KeyError:
-                        g.add_weighted_edges_from([[author, another_author, .5]])
+                        g.add_weighted_edges_from([[author, another_author, (.5 / (len(paper_author)-1))]])
                     else:
                         pass
 
@@ -145,7 +144,7 @@ def read_and_write_html(path):
 def main(name,
          data='bib',
          display_name='Xovee Xu',
-         min_edge_weight=1,
+         min_edge_weight=0,
          color_by='strength',
          size_by='strength',
          charge=150,
@@ -218,9 +217,9 @@ def main(name,
 if __name__ == '__main__':
     args = {
         'name': 'xovee-xu',
-        'data': 'bib',  # 'bib' or 'xml'
+        'data': 'xml',  # 'bib' or 'xml'
         'display_name': 'Xovee Xu',
-        'min_edge_weight': 1,
+        'min_edge_weight': 0,
         'color_by': 'strength',  # 'degree' or 'strength'
         'size_by': 'strength',  # 'degree' or 'strength'
         'charge': 256,
