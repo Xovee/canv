@@ -39,7 +39,7 @@ def load_bib(path):
         return co_author_lst
 
 
-def load_dblp_xml(path, added_paper_set=set(), check_duplication=False):
+def load_dblp_xml(path, added_paper_set, check_duplication=False):
     """
     Load DBLP author metadata.
     First, load author publication xml file. 
@@ -52,6 +52,7 @@ def load_dblp_xml(path, added_paper_set=set(), check_duplication=False):
     with open(path) as f:
         data = xmltodict.parse(f.read())
 
+    print(path)
     co_author_lst = list()
 
     for paper in data['dblpperson']['r']:
@@ -114,14 +115,14 @@ def build_graph(co_author_lst, min_weight, frequent_co_authors=None, show_percen
 
     # 
     percentage_names = None 
-    if frequent_co_authors != None and show_percentage_names == 0:
+    if frequent_co_authors is not None and show_percentage_names == 0:
         percentage_names = frequent_co_authors
-    elif frequent_co_authors == None and show_percentage_names != 0:
+    elif frequent_co_authors is None and show_percentage_names != 0:
         min_percentage_weight = sorted(degrees, reverse=True)[:int(len(degrees) * (show_percentage_names / 100))][-1]
         percentage_names = [u for (u, d) in g.degree(nbunch=list(nodes), weight='weight') if d >= min_percentage_weight]
         print('The webpage will show following {} names in default:'.format(len(percentage_names)))
         print('\t' + ', '.join(sorted(percentage_names, key=lambda name: name.split(' ')[-1])))
-    elif frequent_co_authors == None and show_percentage_names == 0:
+    elif frequent_co_authors is None and show_percentage_names == 0:
         percentage_names = None
     else:
         print("Whether 'frequent_co_authors' should be 'None' or 'show_percentage_names' should be zero.")
@@ -174,18 +175,19 @@ def main(name,
     # load data
     if data == 'xml':    
         added_paper_set = set()
-        if check_duplication == False:
-            co_author_lst = load_dblp_xml(path=name + '.xml', added_paper_set=added_paper_set, check_duplication=check_duplication)
+        if not check_duplication:
+            co_author_lst = load_dblp_xml(path=name + '.xml',
+                                          added_paper_set=added_paper_set,
+                                          check_duplication=check_duplication)
         else:
             co_author_lst = list()
             current_dir = './multiple-persons/'
             file_list = os.listdir(current_dir)
             for file in file_list:
                 co_author_lst.extend(
-                    load_dblp_xml(path=current_dir + file, 
-                        added_paper_set=added_paper_set, 
-                        check_duplication=check_duplication
-                        )
+                    load_dblp_xml(path=current_dir + file,
+                                  added_paper_set=added_paper_set,
+                                  check_duplication=check_duplication)
                     )
     elif data == 'bib':
         co_author_lst = load_bib(path=name + '.bib')
@@ -194,15 +196,15 @@ def main(name,
         exit()
 
     # build graph
-    edge_list, percentage_names = build_graph(co_author_lst, 
-        min_edge_weight, frequent_co_authors=frequent_co_authors, 
-        show_percentage_names=show_percentage_names)
+    edge_list, percentage_names = build_graph(co_author_lst,
+                                              min_edge_weight,
+                                              frequent_co_authors=frequent_co_authors,
+                                              show_percentage_names=show_percentage_names)
 
     number_co_authors = len(set([u for (u, v, w) in edge_list] + [v for (u, v, w) in edge_list]))
 
     # build webweb's web
     web = Web(title=name_to_match)
-
 
     web.networks.xovee(
         adjacency=edge_list,
@@ -237,10 +239,10 @@ def main(name,
 
 if __name__ == '__main__':
     args = {
-        'name': 'multiple',
-        'data': 'xml',  # 'bib' or 'xml'
+        'name': 'xovee-xu',  # name of the data file
+        'data': 'xml',  # suffix of the data file, 'bib' or 'xml'
         'display_name': 'Xovee Xu',
-        'min_edge_weight': .5,
+        'min_edge_weight': 0,
         'color_by': 'strength',  # 'degree' or 'strength'
         'size_by': 'strength',  # 'degree' or 'strength'
         'charge': 256,
@@ -256,7 +258,7 @@ if __name__ == '__main__':
         'frequent_co_authors': None,  # a list of co-author names
         'canvas_height': 700,
         'canvas_width': 1000,
-        'check_duplication': True,  # create page for multiple authors
+        'check_duplication': False,  # create page for multiple authors
     }
 
     main(**args)
