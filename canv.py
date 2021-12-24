@@ -1,5 +1,6 @@
 import xmltodict
 import networkx as nx
+import argparse
 
 from webweb import Web
 import webweb
@@ -141,102 +142,84 @@ def read_and_write_html(path):
         f.write(html_final)
 
 
-def main(name,
-         data='bib',
-         display_name='Xovee Xu',
-         min_edge_weight=0,
-         color_by='strength',
-         size_by='strength',
-         charge=150,
-         link_length=150,
-         #  color_map='Reds',
-         scale_link_opacity=1,
-         scale_link_width=1,
-         name_to_match='Xovee Xu',
-         radius=10,
-         show_node_names=0,
-         hide_menu=0,
-         show_legend=1,
-         frequent_co_authors=None,
-         show_percentage_names=0,
-         canvas_height=700,
-         canvas_width=1000,
-         ):
-
+def main(fre_co_authors=None,):
     # load data
-    if data == 'xml':
-        co_author_lst = load_dblp_xml(path=name + '.xml')
-    elif data == 'bib':
-        co_author_lst = load_bib(path=name + '.bib')
+    if args.data == 'xml':
+        co_author_lst = load_dblp_xml(path=args.file + '.xml')
+    elif args.data == 'bib':
+        co_author_lst = load_bib(path=args.file + '.bib')
     else:
         print("Wrong 'data' keyword, should be 'bib' or 'xml'.")
         exit()
 
     # build graph
-    edge_list, percentage_names = build_graph(co_author_lst, 
-        min_edge_weight, frequent_co_authors=frequent_co_authors, 
-        show_percentage_names=show_percentage_names)
+    edge_list, percentage_names = build_graph(co_author_lst,
+                                              args.min_edge_weight,
+                                              frequent_co_authors=fre_co_authors,
+                                              show_percentage_names=args.show_percentage_names)
 
     number_co_authors = len(set([u for (u, v, w) in edge_list] + [v for (u, v, w) in edge_list]))
 
     # build webweb's web
-    web = Web(title=name_to_match)
-
+    web = Web(title=args.name_to_match)
 
     web.networks.xovee(
         adjacency=edge_list,
     )
 
     # display options
-    web.display.colorBy = color_by
-    web.display.sizeBy = size_by
-    web.display.charge = charge
-    web.display.linkLength = link_length
-    web.display.scaleLinkOpacity = scale_link_opacity
-    web.display.scaleLinkWidth = scale_link_width
-    web.display.nameToMatch = name_to_match
-    web.display.radius = radius
-    web.display.showNodeNames = show_node_names
-    web.display.hideMenu = hide_menu
-    web.display.showLegend = show_legend
+    web.display.colorBy = args.color_by
+    web.display.sizeBy = args.size_by
+    web.display.charge = args.charge
+    web.display.linkLength = args.link_length
+    web.display.scaleLinkOpacity = args.scale_link_opacity
+    web.display.scaleLinkWidth = args.scale_link_width
+    web.display.nameToMatch = args.name_to_match
+    web.display.radius = args.radius
+    web.display.showNodeNames = args.show_node_names
+    web.display.hideMenu = args.hide_menu
+    web.display.showLegend = args.show_legend
     web.display.frequentCoAuthors = percentage_names
-    web.display.h = canvas_height
-    web.display.w = canvas_width
+    web.display.h = args.canvas_height
+    web.display.w = args.canvas_width
     web.display.numberCoAuthor = number_co_authors
-    web.display.displayName = display_name
+    web.display.displayName = args.display_name
 
     # web.show()
 
-    web.save(name + '.html')
+    web.save(args.file + '.html')
 
-    read_and_write_html(name + '.html')
+    read_and_write_html(args.file + '.html')
 
     # change display name
 
 
 if __name__ == '__main__':
-    args = {
-        'name': 'xovee-xu',
-        'data': 'xml',  # 'bib' or 'xml'
-        'display_name': 'Xovee Xu',
-        'min_edge_weight': 0,
-        'color_by': 'strength',  # 'degree' or 'strength'
-        'size_by': 'strength',  # 'degree' or 'strength'
-        'charge': 256,
-        'link_length': 200,
-        'scale_link_opacity': 1,
-        'scale_link_width': 1,
-        'name_to_match': "",
-        'radius': 15,
-        'show_node_names': 0,
-        'hide_menu': 0,
-        'show_legend': 0,
-        'show_percentage_names': 10,  # percentage; 0: don't show; perferably 5-15%;
-        'frequent_co_authors': None,  # a list of co-author names
-        'canvas_height': 700,
-        'canvas_width': 1000,
-    }
+    parser = argparse.ArgumentParser(description='CANV Descriptions')
 
-    main(**args)
+    # parameters
+    parser.add_argument('file', type=str, help='Name of the data file.')
+    parser.add_argument('--data', default='xml', type=str, choices=['bib', 'xml'], help='Type of the data file.')
+    parser.add_argument('--display_name', default='Xovee Xu', type=str, help='The name displayed on the webpage.')
+    parser.add_argument('--min_edge_weight', default=0, type=float, help='Edge weight less than this will be removed.')
+    parser.add_argument('--color_by', default='strength', type=str, choices=['degree', 'strength'], help='Color nodes by.')
+    parser.add_argument('--size_by', default='strength', type=str, choices=['degree', 'strength'], help='Size nodes by.')
+    parser.add_argument('--charge', default=256, type=int, help='Charge of the graph.')
+    parser.add_argument('--link_length', default=200, type=int, help='Length of the links.')
+    parser.add_argument('--scale_link_opacity', default=1, type=int, help='Scale link opacity.')
+    parser.add_argument('--scale_link_width', default=1, type=int, help='Scale link width.')
+    parser.add_argument('--name_to_match', default='', type=str, help='Show a specific node name.')
+    parser.add_argument('--radius', default=15, type=int, help='Radius.')
+    parser.add_argument('--show_node_names', default=0, type=int, help='Whether show all node names in default.')
+    parser.add_argument('--hide_menu', default=1, type=int, help='Whether hide the webpage menu.')
+    parser.add_argument('--show_legend', default=0, type=int, help='Whether show the legend of canvas.')
+    parser.add_argument('--show_percentage_names', default=10, type=int, help='Percentage 0: show no names; for who'
+                                                                              'have many co-authors, preferably ~5-15.')
+    parser.add_argument('--canvas_height', default=700, type=float, help='Height of the canvas.')
+    parser.add_argument('--canvas_width', default=1000, type=float, help='Width of the canvas.')
 
+    args = parser.parse_args()
 
+    frequent_co_authors = None  # Co-author names to display
+
+    main(fre_co_authors=frequent_co_authors)
