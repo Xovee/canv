@@ -1,6 +1,7 @@
 import xmltodict
 import networkx as nx
 
+import os
 from webweb import Web
 import webweb
 
@@ -38,7 +39,7 @@ def load_bib(path):
         return co_author_lst
 
 
-def load_dblp_xml(path):
+def load_dblp_xml(path, added_paper_set=set(), check_duplication=False):
     """
     Load DBLP author metadata.
     First, load author publication xml file. 
@@ -57,24 +58,30 @@ def load_dblp_xml(path):
         author_lst = list()
         # assumption: the first element of Ordered Dict 'paper' is paper type
         paper_type = list(paper.keys())
+        # add paper id to set
+        paper_id = paper[paper_type[0]]['@key']
+        if check_duplication:
+            if paper_id not in added_paper_set:
+                added_paper_set.add(paper_id)
+            else:
+                continue
         if paper_type[0] in ['article', 'inproceedings']:
             authors = paper[list(paper.keys())[0]]['author']
         else:
             continue
 
-        if len(authors) > 2:
-            for author in authors:
-                try:
-                    name = author['#text']
-                except TypeError:
-                    continue
-                if name[-4:].isnumeric():
-                    name = name[:-5]
-                if '(-)' in name:
-                    name = name.replace('(-)', '')
+        for author in authors:
+            try:
+                name = author['#text']
+            except TypeError:
+                continue
+            if name[-4:].isnumeric():
+                name = name[:-5]
+            if '(-)' in name:
+                name = name.replace('(-)', '')
+            author_lst.append(name)
+            if len(authors) == 1:
                 author_lst.append(name)
-        else:
-            continue
         co_author_lst.append(author_lst)
 
     # len(co-author_lst): number of paper
@@ -161,11 +168,25 @@ def main(name,
          show_percentage_names=0,
          canvas_height=700,
          canvas_width=1000,
+         check_duplication=False,
          ):
 
     # load data
-    if data == 'xml':
-        co_author_lst = load_dblp_xml(path=name + '.xml')
+    if data == 'xml':    
+        added_paper_set = set()
+        if check_duplication == False:
+            co_author_lst = load_dblp_xml(path=name + '.xml', added_paper_set=added_paper_set, check_duplication=check_duplication)
+        else:
+            co_author_lst = list()
+            current_dir = './multiple-persons/'
+            file_list = os.listdir(current_dir)
+            for file in file_list:
+                co_author_lst.extend(
+                    load_dblp_xml(path=current_dir + file, 
+                        added_paper_set=added_paper_set, 
+                        check_duplication=check_duplication
+                        )
+                    )
     elif data == 'bib':
         co_author_lst = load_bib(path=name + '.bib')
     else:
@@ -216,10 +237,10 @@ def main(name,
 
 if __name__ == '__main__':
     args = {
-        'name': 'xovee-xu',
+        'name': 'multiple',
         'data': 'xml',  # 'bib' or 'xml'
         'display_name': 'Xovee Xu',
-        'min_edge_weight': 0,
+        'min_edge_weight': .5,
         'color_by': 'strength',  # 'degree' or 'strength'
         'size_by': 'strength',  # 'degree' or 'strength'
         'charge': 256,
@@ -235,6 +256,7 @@ if __name__ == '__main__':
         'frequent_co_authors': None,  # a list of co-author names
         'canvas_height': 700,
         'canvas_width': 1000,
+        'check_duplication': True,  # create page for multiple authors
     }
 
     main(**args)
