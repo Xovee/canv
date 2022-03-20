@@ -144,12 +144,13 @@ def read_and_write_html(path):
 
 def main(fre_co_authors=None,):
     # load data
-    if args.data == 'xml':
-        co_author_lst = load_dblp_xml(path=args.file + '.xml')
-    elif args.data == 'bib':
-        co_author_lst = load_bib(path=args.file + '.bib')
+    f_ext = args.file.split('.')[-1]
+    if f_ext == 'xml':
+        co_author_lst = load_dblp_xml(path=args.file)
+    elif f_ext == 'bib' or 'txt':
+        co_author_lst = load_bib(path=args.file)
     else:
-        print("Wrong 'data' keyword, should be 'bib' or 'xml'.")
+        print("Wrong file name, is it has an extension of 'bib', 'xml', or 'txt'?.")
         exit()
 
     # build graph
@@ -187,9 +188,9 @@ def main(fre_co_authors=None,):
 
     # web.show()
 
-    web.save(args.file + '.html')
+    web.save(args.file.split('.')[0] + '.html')
 
-    read_and_write_html(args.file + '.html')
+    read_and_write_html(args.file.split('.')[0] + '.html')
 
     # change display name
 
@@ -213,8 +214,7 @@ if __name__ == '__main__':
     parser.add_argument('--show_node_names', default=0, type=int, help='Whether show all node names in default.')
     parser.add_argument('--hide_menu', default=1, type=int, help='Whether hide the webpage menu.')
     parser.add_argument('--show_legend', default=0, type=int, help='Whether show the legend of canvas.')
-    parser.add_argument('--show_percentage_names', default=10, type=int, help='Percentage 0: show no names; for who'
-                                                                              'have many co-authors, preferably ~5-15.')
+    parser.add_argument('--show_percentage_names', default=10, type=int, help='Percentage 0: show no names; for who have many co-authors, preferably ~5-15.')
     parser.add_argument('--canvas_height', default=700, type=float, help='Height of the canvas.')
     parser.add_argument('--canvas_width', default=1000, type=float, help='Width of the canvas.')
 

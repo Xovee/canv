@@ -20,12 +20,12 @@ your bibliographic data, e.g., `xovee-xu.bib` or `xovee-xu.xml`
 
 2. Run [canv.py](./canv.py), then you have `xovee-xu.html`, that's all! 
 ```shell
-> python canv.py xovee-xu
+> python canv.py xovee-xu.bib
 ```
 
 ## Option
 
-There are several options you can customize your CANV page.
+There are several options you can customize your CANV page. For example, control the number of names show in the canvas. 
 ```shell
 > python canv.py --help
 ```
