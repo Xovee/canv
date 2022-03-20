@@ -14,6 +14,8 @@ def load_bib(path):
         1. open your google scholar profile
         2. click the box in the left of `TITLE` (below your avatar)
         3. click 'EXPORT' -> 'BibTeX'
+    The author list must follow the Google Bib-style, i.e., starts with "author={" and 
+    each author name is formatted as "Last_name, First_name". 
     """
     with open(path) as f:
         data = f.read()
