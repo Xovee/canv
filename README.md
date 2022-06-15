@@ -2,7 +2,7 @@
 
 ![Example](asset/teaser.png)
 
-CANV is an interactive co-authorship network visualization tool based on [webweb](https://github.com/dblarremore/webweb). See an example above (my network) or at [here](https://xovee.cn/canv.html). You can use this tool to create a standalone webpage containing your co-authorship network. 
+CANV is an interactive co-authorship network visualization tool (a.k.a. collaboration graph) based on [webweb](https://github.com/dblarremore/webweb). See an example above (my network) or at [here](https://xovee.cn/canv.html). You can use this tool to create a standalone webpage containing your co-authorship network. 
 
 ## Dependency
 
