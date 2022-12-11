@@ -52,4 +52,4 @@ GPL-3.0 License
 
 ## Contact
 
-If you notice any bugs or have suggestions, please contact me at `xovee at ieee.org`
+If you notice any bugs or have suggestions, please contact me at `xovee at live.com`
