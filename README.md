@@ -20,7 +20,7 @@ your bibliographic data, e.g., `xovee-xu.bib` or `xovee-xu.xml`
 
 2. Run [canv.py](./canv.py), then you have `xovee-xu.html`, that's all! 
 ```shell
-> python canv.py xovee-xu.bib
+> python canv.py xovee-xu.bib # or xovee-xu.xml
 ```
 
 ## Option
@@ -28,6 +28,10 @@ your bibliographic data, e.g., `xovee-xu.bib` or `xovee-xu.xml`
 There are several options you can customize your CANV page. For example, control the number of names show in the canvas. 
 ```shell
 > python canv.py --help
+```
+Example:
+```shell
+> python canv.py xovee-xu.xml --show_percentage_names 20
 ```
 
 ## Deep Customization
@@ -44,7 +48,7 @@ You can directly edit [template.html](./template.html) to deeply customize your 
 
 ## Acknowledgment
 
-Thanks to [webweb](https://github.com/dblarremore/webweb) and [dblp](https://dblp.org) team.
+Thanks to [webweb](https://github.com/dblarremore/webweb) and [dblp](https://dblp.org) and [Google Scholar](https://scholar.google.com) teams.
 
 ## LICENSE
 
