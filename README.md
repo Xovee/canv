@@ -2,6 +2,8 @@
 
 ![Example](asset/teaser.png)
 
+**Update**: previously CANV is built on top of webweb. I plan to update CANV using ECharts directly. 
+
 CANV is an interactive co-authorship network visualization tool (a.k.a. collaboration graph) based on [webweb](https://github.com/dblarremore/webweb). See an example above (my network) or at [here](https://www.xoveexu.com/project/canv.html). You can use this tool to create a standalone webpage containing your co-authorship network. 
 
 ## Dependency
