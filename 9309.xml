@@ -1,0 +1,578 @@
+<?xml version="1.0"?>
+<dblpperson name="Xovee Xu" pid="261/9309" n="34">
+<person key="homepages/261/9309" mdate="2023-09-17">
+<author pid="261/9309">Xovee Xu</author>
+<note type="uname">&#24464;&#22686;</note>
+<note type="affiliation">University of Electronic Science and Technology of China, School of Computer Science and Engineering, Chengdu, China</note>
+<url>https://www.xoveexu.com/</url>
+<url type="archive">https://xovee.cn/</url>
+<url>https://www.linkedin.com/in/xovee</url>
+<url>https://twitter.com/xoveexu</url>
+<url>https://github.com/Xovee</url>
+<url>https://orcid.org/0000-0001-6415-7558</url>
+</person>
+<r><article key="journals/eswa/XuQXZWZ24" mdate="2023-12-10">
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0000-0002-7825-8058" pid="350/0558">Tangjiang Qian</author>
+<author orcid="0000-0002-4743-8304" pid="60/11082">Zhe Xiao</author>
+<author pid="19/1166">Ni Zhang</author>
+<author pid="18/1539">Jin Wu</author>
+<author orcid="0000-0002-8038-8150" pid="63/3122-2">Fan Zhou 0002</author>
+<title>PGSL: A probabilistic graph diffusion model for source localization.</title>
+<pages>122028</pages>
+<year>2024</year>
+<month>March</month>
+<volume>238</volume>
+<journal>Expert Syst. Appl.</journal>
+<number>Part C</number>
+<ee>https://doi.org/10.1016/j.eswa.2023.122028</ee>
+<url>db/journals/eswa/eswa238.html#XuQXZWZ24</url>
+</article>
+</r>
+<r><article key="journals/tcyb/XuZZLTM24" mdate="2024-01-13">
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0000-0002-8163-3146" pid="73/9481">Ting Zhong</author>
+<author orcid="0000-0002-8038-8150" pid="63/3122-2">Fan Zhou 0002</author>
+<author pid="294/1495">Rongfan Li</author>
+<author orcid="0000-0002-8839-6278" pid="66/974">Goce Trajcevski</author>
+<author orcid="0000-0002-9483-5724" pid="65/4875">Qinggang Meng</author>
+<title>Learning Spatiotemporal Manifold Representation for Probabilistic Land Deformation Prediction.</title>
+<pages>572-585</pages>
+<year>2024</year>
+<month>January</month>
+<volume>54</volume>
+<journal>IEEE Trans. Cybern.</journal>
+<number>1</number>
+<ee>https://doi.org/10.1109/TCYB.2023.3291049</ee>
+<url>db/journals/tcyb/tcyb54.html#XuZZLTM24</url>
+</article>
+</r>
+<r><article key="journals/kbs/XuW0HZT23" mdate="2023-08-18">
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0000-0001-7167-9055" pid="32/3351">Zhiyuan Wang</author>
+<author orcid="0000-0002-8038-8150" pid="63/3122-2">Fan Zhou 0002</author>
+<author orcid="0000-0002-2841-1106" pid="62/2964">Ying Huang</author>
+<author orcid="0000-0002-8163-3146" pid="73/9481">Ting Zhong</author>
+<author orcid="0000-0002-8839-6278" pid="66/974">Goce Trajcevski</author>
+<title>Dynamic transformer ODEs for large-scale reservoir inflow forecasting.</title>
+<pages>110737</pages>
+<year>2023</year>
+<volume>276</volume>
+<journal>Knowl. Based Syst.</journal>
+<ee>https://doi.org/10.1016/j.knosys.2023.110737</ee>
+<url>db/journals/kbs/kbs276.html#XuW0HZT23</url>
+</article>
+</r>
+<r><article key="journals/tbd/XuWGZHZT23" mdate="2023-11-28">
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0000-0001-7167-9055" pid="32/3351">Zhiyuan Wang</author>
+<author orcid="0000-0002-9621-5414" pid="43/5917">Qiang Gao</author>
+<author orcid="0000-0002-8163-3146" pid="73/9481">Ting Zhong</author>
+<author orcid="0000-0001-5759-3562" pid="43/292">Bei Hui</author>
+<author orcid="0000-0002-8038-8150" pid="63/3122-2">Fan Zhou 0002</author>
+<author orcid="0000-0002-8839-6278" pid="66/974">Goce Trajcevski</author>
+<title>Spatial-Temporal Contrasting for Fine-Grained Urban Flow Inference.</title>
+<pages>1711-1725</pages>
+<year>2023</year>
+<month>December</month>
+<volume>9</volume>
+<journal>IEEE Trans. Big Data</journal>
+<number>6</number>
+<ee>https://doi.org/10.1109/TBDATA.2023.3316471</ee>
+<url>db/journals/tbd/tbd9.html#XuWGZHZT23</url>
+</article>
+</r>
+<r><article key="journals/tkde/XuZZLT23" mdate="2023-03-28">
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0000-0002-8038-8150" pid="63/3122-2">Fan Zhou 0002</author>
+<author orcid="0000-0002-1474-3169" pid="88/2172">Kunpeng Zhang</author>
+<author orcid="0000-0001-8595-8637" pid="00/4516">Siyuan Liu</author>
+<author orcid="0000-0002-8839-6278" pid="66/974">Goce Trajcevski</author>
+<title>CasFlow: Exploring Hierarchical Structures and Propagation Uncertainty for Cascade Prediction.</title>
+<pages>3484-3499</pages>
+<year>2023</year>
+<month>April</month>
+<volume>35</volume>
+<journal>IEEE Trans. Knowl. Data Eng.</journal>
+<number>4</number>
+<ee>https://doi.org/10.1109/TKDE.2021.3126475</ee>
+<url>db/journals/tkde/tkde35.html#XuZZLT23</url>
+</article>
+</r>
+<r><article key="journals/tkde/XuZZL23" mdate="2023-04-29">
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0000-0002-8038-8150" pid="63/3122-2">Fan Zhou 0002</author>
+<author orcid="0000-0002-1474-3169" pid="88/2172">Kunpeng Zhang</author>
+<author orcid="0000-0001-8595-8637" pid="00/4516">Siyuan Liu</author>
+<title>CCGL: Contrastive Cascade Graph Learning.</title>
+<pages>4539-4554</pages>
+<year>2023</year>
+<month>May</month>
+<volume>35</volume>
+<journal>IEEE Trans. Knowl. Data Eng.</journal>
+<number>5</number>
+<ee>https://doi.org/10.1109/TKDE.2022.3151829</ee>
+<url>db/journals/tkde/tkde35.html#XuZZL23</url>
+</article>
+</r>
+<r><article key="journals/tkde/XiaoXLZLZ23" mdate="2023-10-14">
+<author orcid="0000-0001-8339-1278" pid="129/9670">Chunjing Xiao</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="30/9302">Yue Lei</author>
+<author orcid="0000-0002-1474-3169" pid="88/2172">Kunpeng Zhang</author>
+<author orcid="0000-0001-8595-8637" pid="00/4516">Siyuan Liu</author>
+<author orcid="0000-0002-8038-8150" pid="63/3122-2">Fan Zhou 0002</author>
+<title>Counterfactual Graph Learning for Anomaly Detection on Attributed Networks.</title>
+<pages>10540-10553</pages>
+<year>2023</year>
+<month>October</month>
+<volume>35</volume>
+<journal>IEEE Trans. Knowl. Data Eng.</journal>
+<number>10</number>
+<ee>https://doi.org/10.1109/TKDE.2023.3250523</ee>
+<url>db/journals/tkde/tkde35.html#XiaoXLZLZ23</url>
+</article>
+</r>
+<r><inproceedings key="conf/aaai/0003XZ023" mdate="2023-09-04">
+<author pid="180/2455-3">Haoyang Yu 0003</author>
+<author pid="261/9309">Xovee Xu</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<title>Overcoming Forgetting in Fine-Grained Urban Flow Inference via Adaptive Knowledge Replay.</title>
+<pages>5393-5401</pages>
+<year>2023</year>
+<booktitle>AAAI</booktitle>
+<ee type="oa">https://doi.org/10.1609/aaai.v37i4.25671</ee>
+<crossref>conf/aaai/2023</crossref>
+<url>db/conf/aaai/aaai2023.html#0003XZ023</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/aaai/ChengXZ0T23" mdate="2023-09-04">
+<author pid="324/1807">Zhangtao Cheng</author>
+<author pid="261/9309">Xovee Xu</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author pid="66/974">Goce Trajcevski</author>
+<title>CasODE: Modeling Irregular Information Cascade via Neural Ordinary Differential Equations (Student Abstract).</title>
+<pages>16192-16193</pages>
+<year>2023</year>
+<booktitle>AAAI</booktitle>
+<ee type="oa">https://doi.org/10.1609/aaai.v37i13.26956</ee>
+<crossref>conf/aaai/2023</crossref>
+<url>db/conf/aaai/aaai2023.html#ChengXZ0T23</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/aaai/QianXXZ023" mdate="2023-09-04">
+<author pid="350/0558">Tangjiang Qian</author>
+<author pid="261/9309">Xovee Xu</author>
+<author pid="60/11082">Zhe Xiao</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<title>A Probabilistic Graph Diffusion Model for Source Localization (Student Abstract).</title>
+<pages>16306-16307</pages>
+<year>2023</year>
+<booktitle>AAAI</booktitle>
+<ee type="oa">https://doi.org/10.1609/aaai.v37i13.27013</ee>
+<crossref>conf/aaai/2023</crossref>
+<url>db/conf/aaai/aaai2023.html#QianXXZ023</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/cikm/0003HXT023" mdate="2023-10-27">
+<author orcid="0000-0002-2202-632X" pid="58/411-3">Ce Li 0003</author>
+<author orcid="0009-0007-4977-1657" pid="358/7838">Rongpei Hong</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0000-0002-8839-6278" pid="66/974">Goce Trajcevski</author>
+<author orcid="0000-0002-8038-8150" pid="63/3122-2">Fan Zhou 0002</author>
+<title>Simplifying Temporal Heterogeneous Network for Continuous-Time Link prediction.</title>
+<pages>1288-1297</pages>
+<year>2023</year>
+<booktitle>CIKM</booktitle>
+<ee>https://doi.org/10.1145/3583780.3615059</ee>
+<crossref>conf/cikm/2023</crossref>
+<url>db/conf/cikm/cikm2023.html#0003HXT023</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/cikm/XuLZ23" mdate="2023-10-27">
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0009-0009-2526-4823" pid="95/7674">Jiayang Li</author>
+<author orcid="0000-0002-8038-8150" pid="63/3122-2">Fan Zhou 0002</author>
+<title>MDCC: A Multimodal Dynamic Dataset for Donation-based Crowdfunding Campaigns.</title>
+<pages>5417-5421</pages>
+<year>2023</year>
+<booktitle>CIKM</booktitle>
+<ee>https://doi.org/10.1145/3583780.3615124</ee>
+<crossref>conf/cikm/2023</crossref>
+<url>db/conf/cikm/cikm2023.html#XuLZ23</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/icassp/XuWWLZT23" mdate="2023-11-05">
+<author pid="261/9309">Xovee Xu</author>
+<author pid="305/5317">Yutao Wei</author>
+<author pid="14/3832">Pengyu Wang</author>
+<author pid="13/6511">Xucheng Luo</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author pid="66/974">Goce Trajcevski</author>
+<title>Diffusion Probabilistic Modeling for Fine-Grained Urban Traffic Flow Inference with Relaxed Structural Constraint.</title>
+<pages>1-5</pages>
+<year>2023</year>
+<booktitle>ICASSP</booktitle>
+<ee>https://doi.org/10.1109/ICASSP49357.2023.10096169</ee>
+<crossref>conf/icassp/2023</crossref>
+<url>db/conf/icassp/icassp2023.html#XuWWLZT23</url>
+</inproceedings>
+</r>
+<r><article key="journals/csur/ZhouXTZ21" mdate="2022-11-23">
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="66/974">Goce Trajcevski</author>
+<author orcid="0000-0002-1474-3169" pid="88/2172">Kunpeng Zhang</author>
+<title>A Survey of Information Cascade Analysis: Models, Predictions, and Recent Advances.</title>
+<pages>27:1-27:36</pages>
+<year>2022</year>
+<volume>54</volume>
+<journal>ACM Comput. Surv.</journal>
+<number>2</number>
+<ee>https://doi.org/10.1145/3433000</ee>
+<url>db/journals/csur/csur54.html#ZhouXTZ21</url>
+</article>
+</r>
+<r><article key="journals/kbs/XuZLTZ22" mdate="2022-09-23">
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0000-0002-8163-3146" pid="73/9481">Ting Zhong</author>
+<author orcid="0000-0002-2202-632X" pid="58/411-3">Ce Li 0003</author>
+<author orcid="0000-0002-8839-6278" pid="66/974">Goce Trajcevski</author>
+<author orcid="0000-0002-8038-8150" pid="63/3122-2">Fan Zhou 0002</author>
+<title>Heterogeneous dynamical academic network for learning scientific impact propagation.</title>
+<pages>107839</pages>
+<year>2022</year>
+<volume>238</volume>
+<journal>Knowl. Based Syst.</journal>
+<ee>https://doi.org/10.1016/j.knosys.2021.107839</ee>
+<url>db/journals/kbs/kbs238.html#XuZLTZ22</url>
+</article>
+</r>
+<r><article key="journals/kbs/YuXTZ22" mdate="2024-01-25">
+<author orcid="0000-0003-4320-2721" pid="29/4989-1">Liu Yu 0001</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0000-0002-8839-6278" pid="66/974">Goce Trajcevski</author>
+<author orcid="0000-0002-8038-8150" pid="63/3122-2">Fan Zhou 0002</author>
+<title>Transformer-enhanced Hawkes process with decoupling training for information cascade prediction.</title>
+<pages>109740</pages>
+<year>2022</year>
+<volume>255</volume>
+<journal>Knowl. Based Syst.</journal>
+<ee>https://doi.org/10.1016/j.knosys.2022.109740</ee>
+<url>db/journals/kbs/kbs255.html#YuXTZ22</url>
+</article>
+</r>
+<r><article key="journals/tist/0002WXTT22" mdate="2022-03-15">
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author orcid="0000-0002-8822-6957" pid="14/3832">Pengyu Wang</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0000-0001-7364-8324" pid="284/4234">Wenxin Tai</author>
+<author orcid="0000-0002-8839-6278" pid="66/974">Goce Trajcevski</author>
+<title>Contrastive Trajectory Learning for Tour Recommendation.</title>
+<pages>4:1-4:25</pages>
+<year>2022</year>
+<volume>13</volume>
+<journal>ACM Trans. Intell. Syst. Technol.</journal>
+<number>1</number>
+<ee>https://doi.org/10.1145/3462331</ee>
+<url>db/journals/tist/tist13.html#0002WXTT22</url>
+</article>
+</r>
+<r><inproceedings key="conf/aaai/WangXTZZ022" mdate="2023-09-04">
+<author pid="32/3351">Zhiyuan Wang</author>
+<author pid="261/9309">Xovee Xu</author>
+<author pid="66/974">Goce Trajcevski</author>
+<author pid="88/2172">Kunpeng Zhang</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<title>PrEF: Probabilistic Electricity Forecasting via Copula-Augmented State Space Model.</title>
+<pages>12200-12207</pages>
+<year>2022</year>
+<booktitle>AAAI</booktitle>
+<ee type="oa">https://doi.org/10.1609/aaai.v36i11.21480</ee>
+<crossref>conf/aaai/2022</crossref>
+<url>db/conf/aaai/aaai2022.html#WangXTZZ022</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/aaai/WangXZ022" mdate="2023-09-04">
+<author pid="76/4194">Guanyu Wang</author>
+<author pid="261/9309">Xovee Xu</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<title>Conditional Collaborative Filtering Process for Top-K Recommender System (Student Abstract).</title>
+<pages>13073-13074</pages>
+<year>2022</year>
+<booktitle>AAAI</booktitle>
+<ee type="oa">https://doi.org/10.1609/aaai.v36i11.21673</ee>
+<crossref>conf/aaai/2022</crossref>
+<url>db/conf/aaai/aaai2022.html#WangXZ022</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/aaai/YuXZ022" mdate="2023-09-08">
+<author orcid="0000-0003-1933-7220" pid="180/2455-3">Haoyang Yu 0003</author>
+<author pid="261/9309">Xovee Xu</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<title>Fine-Grained Urban Flow Inference via Normalizing Flow (Student Abstract).</title>
+<pages>13101-13102</pages>
+<year>2022</year>
+<booktitle>AAAI</booktitle>
+<ee type="oa">https://doi.org/10.1609/aaai.v36i11.21687</ee>
+<crossref>conf/aaai/2022</crossref>
+<url>db/conf/aaai/aaai2022.html#YuXZ022</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/aaai/YuXZT022" mdate="2024-01-25">
+<author pid="29/4989-1">Liu Yu 0001</author>
+<author pid="261/9309">Xovee Xu</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="66/974">Goce Trajcevski</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<title>Linking Transformer to Hawkes Process for Information Cascade Prediction (Student Abstract).</title>
+<pages>13103-13104</pages>
+<year>2022</year>
+<booktitle>AAAI</booktitle>
+<ee type="oa">https://doi.org/10.1609/aaai.v36i11.21688</ee>
+<crossref>conf/aaai/2022</crossref>
+<url>db/conf/aaai/aaai2022.html#YuXZT022</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/icassp/ZhongYLXLZ22" mdate="2023-09-30">
+<author pid="73/9481">Ting Zhong</author>
+<author orcid="0000-0003-1933-7220" pid="180/2455-3">Haoyang Yu 0003</author>
+<author pid="294/1495">Rongfan Li</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="13/6511">Xucheng Luo</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<title>Probabilistic Fine-Grained Urban Flow Inference with Normalizing Flows.</title>
+<pages>3663-3667</pages>
+<year>2022</year>
+<booktitle>ICASSP</booktitle>
+<ee>https://doi.org/10.1109/ICASSP43922.2022.9747900</ee>
+<crossref>conf/icassp/2022</crossref>
+<url>db/conf/icassp/icassp2022.html#ZhongYLXLZ22</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/nips/WangXZTZ022" mdate="2024-01-08">
+<author pid="32/3351">Zhiyuan Wang</author>
+<author pid="261/9309">Xovee Xu</author>
+<author pid="19/949">Weifeng Zhang</author>
+<author pid="66/974">Goce Trajcevski</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<title>Learning Latent Seasonal-Trend Representations for Time Series Forecasting.</title>
+<year>2022</year>
+<crossref>conf/nips/2022</crossref>
+<booktitle>NeurIPS</booktitle>
+<ee type="oa">http://papers.nips.cc/paper_files/paper/2022/hash/fd6613131889a4b656206c50a8bd7790-Abstract-Conference.html</ee>
+<url>db/conf/nips/neurips2022.html#WangXZTZ022</url>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2211-09625" mdate="2023-09-30">
+<author pid="43/5917">Qiang Gao</author>
+<author pid="334/0535">Jinyu Hong</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="78/586">Ping Kuang</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author pid="66/974">Goce Trajcevski</author>
+<title>Predicting Human Mobility via Self-supervised Disentanglement Learning.</title>
+<year>2022</year>
+<volume>abs/2211.09625</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2211.09625</ee>
+<url>db/journals/corr/corr2211.html#abs-2211-09625</url>
+</article>
+</r>
+<r><inproceedings key="conf/cikm/WangZXZZW21" mdate="2022-06-23">
+<author pid="76/4194">Guanyu Wang</author>
+<author pid="73/9481">Ting Zhong</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="88/2172">Kunpeng Zhang</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author pid="84/2694">Yong Wang</author>
+<title>Vector-Quantized Autoencoder With Copula for Collaborative Filtering.</title>
+<pages>3458-3462</pages>
+<year>2021</year>
+<booktitle>CIKM</booktitle>
+<ee>https://doi.org/10.1145/3459637.3482216</ee>
+<crossref>conf/cikm/2021</crossref>
+<url>db/conf/cikm/cikm2021.html#WangZXZZW21</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/globecom/ZhouLXLT21" mdate="2024-02-15">
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author pid="58/411-3">Ce Li 0003</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="76/8615-2">Leyuan Liu 0002</author>
+<author pid="66/974">Goce Trajcevski</author>
+<title>HGENA: A Hyperbolic Graph Embedding Approach for Network Alignment.</title>
+<pages>1-6</pages>
+<year>2021</year>
+<booktitle>GLOBECOM</booktitle>
+<ee>https://doi.org/10.1109/GLOBECOM46510.2021.9685690</ee>
+<crossref>conf/globecom/2021</crossref>
+<url>db/conf/globecom/globecom2021.html#ZhouLXLT21</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/sigir/0002YXT21" mdate="2024-01-25">
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author orcid="0000-0003-4320-2721" pid="29/4989-1">Liu Yu 0001</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="66/974">Goce Trajcevski</author>
+<title>Decoupling Representation and Regressor for Long-Tailed Information Cascade Prediction.</title>
+<pages>1875-1879</pages>
+<year>2021</year>
+<booktitle>SIGIR</booktitle>
+<ee>https://doi.org/10.1145/3404835.3463104</ee>
+<crossref>conf/sigir/2021</crossref>
+<url>db/conf/sigir/sigir2021.html#0002YXT21</url>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2107-12576" mdate="2021-10-14">
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author pid="88/2172">Kunpeng Zhang</author>
+<author pid="00/4516">Siyuan Liu</author>
+<title>CCGL: Contrastive Cascade Graph Learning.</title>
+<year>2021</year>
+<volume>abs/2107.12576</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://arxiv.org/abs/2107.12576</ee>
+<url>db/journals/corr/corr2107.html#abs-2107-12576</url>
+</article>
+</r>
+<r><inproceedings key="conf/globecom/0002JXZTW20" mdate="2021-04-09">
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author pid="03/11308">Xin Jing</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="66/974">Goce Trajcevski</author>
+<author pid="18/1539">Jin Wu</author>
+<title>Continual Information Cascade Learning.</title>
+<pages>1-6</pages>
+<year>2020</year>
+<booktitle>GLOBECOM</booktitle>
+<ee>https://doi.org/10.1109/GLOBECOM42002.2020.9322124</ee>
+<crossref>conf/globecom/2020</crossref>
+<url>db/conf/globecom/globecom2020.html#0002JXZTW20</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/globecom/0002QXWZT20" mdate="2023-09-30">
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author orcid="0000-0002-2642-9329" pid="284/1845">Xiuxiu Qi</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="34/5354">Jiahao Wang</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="66/974">Goce Trajcevski</author>
+<title>Meta-Learned User Preference for Topic Participation Prediction.</title>
+<pages>1-6</pages>
+<year>2020</year>
+<booktitle>GLOBECOM</booktitle>
+<ee>https://doi.org/10.1109/GLOBECOM42002.2020.9322197</ee>
+<crossref>conf/globecom/2020</crossref>
+<url>db/conf/globecom/globecom2020.html#0002QXWZT20</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/globecom/0002WZTXL20" mdate="2024-02-15">
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author pid="240/9467">Zijing Wen</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="66/974">Goce Trajcevski</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="76/8615-2">Leyuan Liu 0002</author>
+<title>Unsupervised User Identity Linkage via Graph Neural Networks.</title>
+<pages>1-6</pages>
+<year>2020</year>
+<booktitle>GLOBECOM</booktitle>
+<ee>https://doi.org/10.1109/GLOBECOM42002.2020.9322311</ee>
+<crossref>conf/globecom/2020</crossref>
+<url>db/conf/globecom/globecom2020.html#0002WZTXL20</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/infocom/0002XZTZ20" mdate="2020-09-05">
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="88/2172">Kunpeng Zhang</author>
+<author pid="66/974">Goce Trajcevski</author>
+<author pid="73/9481">Ting Zhong</author>
+<title>Variational Information Diffusion for Probabilistic Cascades Prediction.</title>
+<pages>1618-1627</pages>
+<year>2020</year>
+<booktitle>INFOCOM</booktitle>
+<ee>https://doi.org/10.1109/INFOCOM41043.2020.9155349</ee>
+<crossref>conf/infocom/2020</crossref>
+<url>db/conf/infocom/infocom2020.html#0002XZTZ20</url>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2003-12042" mdate="2022-09-23">
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author orcid="0000-0002-2202-632X" pid="58/411-3">Ce Li 0003</author>
+<author pid="66/974">Goce Trajcevski</author>
+<author pid="73/9481">Ting Zhong</author>
+<author pid="88/2172">Kunpeng Zhang</author>
+<title>A Heterogeneous Dynamical Graph Neural Networks Approach to Quantify Scientific Impact.</title>
+<year>2020</year>
+<volume>abs/2003.12042</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://arxiv.org/abs/2003.12042</ee>
+<url>db/journals/corr/corr2003.html#abs-2003-12042</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2005-11041" mdate="2021-01-23">
+<author pid="63/3122-2">Fan Zhou 0002</author>
+<author orcid="0000-0001-6415-7558" pid="261/9309">Xovee Xu</author>
+<author pid="66/974">Goce Trajcevski</author>
+<author pid="88/2172">Kunpeng Zhang</author>
+<title>A Survey of Information Cascade Analysis: Models, Predictions and Recent Advances.</title>
+<year>2020</year>
+<volume>abs/2005.11041</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://arxiv.org/abs/2005.11041</ee>
+<url>db/journals/corr/corr2005.html#abs-2005-11041</url>
+</article>
+</r>
+<coauthors n="37" nc="1">
+<co c="0"><na f="c/Cheng:Zhangtao" pid="324/1807">Zhangtao Cheng</na></co>
+<co c="0"><na f="g/Gao:Qiang" pid="43/5917">Qiang Gao</na></co>
+<co c="0"><na f="h/Hong:Jinyu" pid="334/0535">Jinyu Hong</na></co>
+<co c="0"><na f="h/Hong:Rongpei" pid="358/7838">Rongpei Hong</na></co>
+<co c="0"><na f="h/Huang:Ying" pid="62/2964">Ying Huang</na></co>
+<co c="0"><na f="h/Hui:Bei" pid="43/292">Bei Hui</na></co>
+<co c="0"><na f="j/Jing:Xin" pid="03/11308">Xin Jing</na></co>
+<co c="0"><na f="k/Kuang:Ping" pid="78/586">Ping Kuang</na></co>
+<co c="0"><na f="l/Lei:Yue" pid="30/9302">Yue Lei</na></co>
+<co c="0"><na f="l/Li_0003:Ce" pid="58/411-3">Ce Li 0003</na></co>
+<co c="0"><na f="l/Li:Jiayang" pid="95/7674">Jiayang Li</na></co>
+<co c="0"><na f="l/Li:Rongfan" pid="294/1495">Rongfan Li</na></co>
+<co c="0"><na f="l/Liu_0002:Leyuan" pid="76/8615-2">Leyuan Liu 0002</na></co>
+<co c="0"><na f="l/Liu:Siyuan" pid="00/4516">Siyuan Liu</na></co>
+<co c="0"><na f="l/Luo:Xucheng" pid="13/6511">Xucheng Luo</na></co>
+<co c="0"><na f="m/Meng:Qinggang" pid="65/4875">Qinggang Meng</na></co>
+<co c="0"><na f="q/Qi:Xiuxiu" pid="284/1845">Xiuxiu Qi</na></co>
+<co c="0"><na f="q/Qian:Tangjiang" pid="350/0558">Tangjiang Qian</na></co>
+<co c="0"><na f="t/Tai:Wenxin" pid="284/4234">Wenxin Tai</na></co>
+<co c="0"><na f="t/Trajcevski:Goce" pid="66/974">Goce Trajcevski</na></co>
+<co c="0"><na f="w/Wang:Guanyu" pid="76/4194">Guanyu Wang</na></co>
+<co c="0"><na f="w/Wang:Jiahao" pid="34/5354">Jiahao Wang</na></co>
+<co c="0"><na f="w/Wang:Pengyu" pid="14/3832">Pengyu Wang</na></co>
+<co c="0"><na f="w/Wang:Yong" pid="84/2694">Yong Wang</na></co>
+<co c="0"><na f="w/Wang:Zhiyuan" pid="32/3351">Zhiyuan Wang</na></co>
+<co c="0"><na f="w/Wei:Yutao" pid="305/5317">Yutao Wei</na></co>
+<co c="0"><na f="w/Wen:Zijing" pid="240/9467">Zijing Wen</na></co>
+<co c="0"><na f="w/Wu:Jin" pid="18/1539">Jin Wu</na></co>
+<co c="0"><na f="x/Xiao:Chunjing" pid="129/9670">Chunjing Xiao</na></co>
+<co c="0"><na f="x/Xiao:Zhe" pid="60/11082">Zhe Xiao</na></co>
+<co c="0"><na f="y/Yu_0003:Haoyang" pid="180/2455-3">Haoyang Yu 0003</na></co>
+<co c="0"><na f="y/Yu_0001:Liu" pid="29/4989-1">Liu Yu 0001</na></co>
+<co c="0"><na f="z/Zhang:Kunpeng" pid="88/2172">Kunpeng Zhang</na></co>
+<co c="0"><na f="z/Zhang:Ni" pid="19/1166">Ni Zhang</na></co>
+<co c="0"><na f="z/Zhang:Weifeng" pid="19/949">Weifeng Zhang</na></co>
+<co c="0"><na f="z/Zhong:Ting" pid="73/9481">Ting Zhong</na></co>
+<co c="0"><na f="z/Zhou_0002:Fan" pid="63/3122-2">Fan Zhou 0002</na></co>
+</coauthors>
+</dblpperson>
+
